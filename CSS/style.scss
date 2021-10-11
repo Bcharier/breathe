@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'renogare';
+	src: url(../Assets/font/Renogare-Regular.otf);
+}
+
+body {
+	font-family: 'renogare';
+}
+
+.hero-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.feather {
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	animation: UpAndDown 7s ease-in-out infinite;
+	z-index: 5;
+}
+
+@keyframes UpAndDown {
+	0%,
+	100% {
+		top: 60%;
+	}
+
+	50% {
+		top: 40%;
+	}
+}
+
+.meditation {
+	color: #c8c4ca;
+	z-index: 5;
+	margin: auto;
+	font-size: 3rem;
+	opacity: 0.8;
+}
+
+.breathe {
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -30%);
+}
+
+.one {
+	position: absolute;
+	top: 60%;
+	left: 25%;
+	opacity: 0;
+	order: -1;
+	animation: appear 1.5s ease-in forwards 7s;
+}
+
+.two {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	opacity: 0;
+	animation: appear 1.5s ease-in forwards 14s;
+}
+
+.three {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -80%);
+	opacity: 0;
+	animation: appear 1.5s ease-in forwards 21s;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0.8;
+	}
+}
